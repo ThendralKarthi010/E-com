@@ -1,0 +1,115 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:row;
+}
+
+.head {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.search {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.banner {
+    background-color: #f0f0f0;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.minibanner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.cards {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cards p {
+    margin-top: 10px;
+}
+
+.cards h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.cards button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cards button:hover {
+    background-color: #555;
+}
+
+.cart,
+.contact {
+    height: 500px; /* Adjust as needed */
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction:row;
+        align-items: flex-start;
+    }
+
+    .search {
+        margin-top: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
